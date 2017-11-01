@@ -1,24 +1,645 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Drs-UM-tRm">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RecipeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="RecipeViewController" customClass="ViewController" customModule="Homework3_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ux2-Xi-VsQ">
+                                <rect key="frame" x="-4" y="113" width="383" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vqo-rV-eZF">
+                                        <rect key="frame" x="20" y="20" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛跑者飲食指南：最適合跑者優化體能的營養食譜" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-XO-YJb">
+                                        <rect key="frame" x="168" y="41" width="207" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ytF-N1-Sad" appends="YES" id="Hbf-xr-ceb"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-8V-kMg">
+                                <rect key="frame" x="-4" y="436" width="379" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img3.png" translatesAutoresizingMaskIntoConstraints="NO" id="MBS-fz-Blc">
+                                        <rect key="frame" x="20" y="20" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="輕鬆作超好吃的日式素料理：50道經典和風素食食譜" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyn-Lj-Uh5">
+                                        <rect key="frame" x="175" y="41" width="196" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hey-8g-z6g" appends="YES" id="B4K-QU-af5"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Zh-Ur-p5v">
+                                <rect key="frame" x="-4" y="274" width="376" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2.png" translatesAutoresizingMaskIntoConstraints="NO" id="WJ7-SM-2On">
+                                        <rect key="frame" x="20" y="20" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="東京自由之丘Mont St. Clair的甜點典藏食譜" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-l8-pvQ">
+                                        <rect key="frame" x="175" y="41" width="193" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Oel-IP-21w" appends="YES" id="iNo-hb-iNd"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="食譜" id="JNS-Y9-EmI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ytF-N1-Sad" userLabel="Book1 Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="5Om-35-EFQ" kind="show" id="36c-vI-iDt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Oel-IP-21w" userLabel="Book2 Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="IUI-g3-TY9" kind="show" id="yfG-tk-wLm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Hey-8g-z6g" userLabel="Book3 Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="qNO-se-YdK" kind="show" id="ENo-ah-8kz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1946" y="-188"/>
+        </scene>
+        <!--Book1DetailViewConller-->
+        <scene sceneID="GmH-v7-uTS">
+            <objects>
+                <viewController id="5Om-35-EFQ" userLabel="Book1DetailViewConller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lMM-08-ssy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img9.png" translatesAutoresizingMaskIntoConstraints="NO" id="34a-Mc-tmO">
+                                <rect key="frame" x="259" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img8.png" translatesAutoresizingMaskIntoConstraints="NO" id="USs-H2-nyS">
+                                <rect key="frame" x="143" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img7.png" translatesAutoresizingMaskIntoConstraints="NO" id="k1T-aT-LUe">
+                                <rect key="frame" x="32" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c5R-fO-2pi">
+                                <rect key="frame" x="32" y="348" width="316" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">跑步前的計劃表，搭配營養均衡的食譜，身為愛跑者的你不需要節食！
+　　
+　　近年越來越多人喜歡跑步，因為這是不需要太多裝備就能做的運動。但許多人可能在飲食上會有些疑惑，運動只能補充高蛋白嗎？運動完能不能馬上吃東西？消耗太多熱量可以怎麼補充等。其實適當的飲食更能夠使運動的效果更加乘，除了切入初學跑者在飲食上可能會有的問題，同時對有經驗的跑者也提供最適合、多元食譜，並摒除運動只能食用清淡食物的觀念，只要在合宜的食材掌控下，愛跑步的你不需要讓自己餓肚子！
+　　
+　　★無論是偶爾運動的人或是專業的跑者，都會在運動中流失能量，若沒有即時補充，反而不容易讓體況維持在最佳狀態。藉由專業運動營養師替你規劃「跑步前」、「跑步中」及「跑步後」的計畫表，解說愛跑者的基礎飲食概念，只需要掌握營養攝取的重點，就能輕易達到均衡飲食的效果。
+　　
+　　★收錄為愛跑者專屬設計三十道營養食譜，包含鹹甜蛋糕、米布丁、義大利麵等佳餚，營養均衡而不單調，只要在適當時機、適量攝取，想要控制體重的你，依然可以大快朵頤！
+　　
+　　★每道食譜都有清楚剖析營養重點的「營養更加分」，並列出可以依照喜好或心情變化的「小秘訣」，三十道食譜各有不同變化！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1.png" translatesAutoresizingMaskIntoConstraints="NO" id="wvj-Jg-8B4">
+                                <rect key="frame" x="116" y="100" width="142" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="mwZ-0f-WpI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlC-ZP-i7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552.8000000000002" y="-768.4729064039409"/>
+        </scene>
+        <!--Book2DetailViewConller-->
+        <scene sceneID="yQ4-eD-212">
+            <objects>
+                <viewController id="IUI-g3-TY9" userLabel="Book2DetailViewConller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4t8-m2-hgT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img12.png" translatesAutoresizingMaskIntoConstraints="NO" id="fk9-D7-fLr">
+                                <rect key="frame" x="259" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img11.png" translatesAutoresizingMaskIntoConstraints="NO" id="sXZ-DD-3Fr">
+                                <rect key="frame" x="143" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img10.png" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-UQ-Bgo">
+                                <rect key="frame" x="32" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-Sn-uES">
+                                <rect key="frame" x="32" y="358" width="316" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">{ 榮獲巴黎2013 SALON DU CHOCOLAT最高榮譽5 星賞}
+　　明星主廚──辻口博啓 親授
+　　M o n t S t . C l a i r
+　　讓每一個擁有豐富層次感的精緻甜點充滿水嫩感，
+　　絕對讓人想一嚐再嚐！
+　　來自日本自由之丘的超人氣甜點， 絕對是舞動味蕾的經典美味！
+
+　　想一窺甜點達人堅持的好味道嗎？
+　　巧克力的微苦、咖啡的香氣、
+　　季節水果的酸甜……
+　　與宛如雪花般的輕盈蛋糕交織成
+　　入口即化的黃金比例，
+　　是一本烘焙愛好者的完美進階指南！
+　　由經典甜點的進化至辻口師傅的個人創新食譜，將日本甜點帶入更深層美味。
+　　座落於甜點王國──自由之丘的M o n t S t . C l a i r，不只風靡全日本，
+　　每天都有來自世界各地的洋菓子饕客，而每每比賽受賞的辻口師傅，
+　　更深入探討歐洲精緻美食文化，研究出連法國人都讚不絕口的美味！
+　　而M o n t S t . C l a i r每一道熱賣人氣甜點、世界大賽受賞甜點……
+　　辻口師傅都毫無保留地公開在本書中。
+　　藉由閱讀、烘焙、創新、賞味，
+　　您也能製作出讓每一口都輕盈且富有層次感的精緻甜點！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oHC-oT-OwR">
+                                <rect key="frame" x="116" y="100" width="142" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="OnP-8T-KaM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0nl-bJ-qLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552.8000000000002" y="3.6945812807881775"/>
+        </scene>
+        <!--Book3DetailViewConller-->
+        <scene sceneID="1xL-C7-pvZ">
+            <objects>
+                <viewController id="qNO-se-YdK" userLabel="Book3DetailViewConller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUW-7j-6UW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img15.png" translatesAutoresizingMaskIntoConstraints="NO" id="th8-ll-TH9">
+                                <rect key="frame" x="259" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img14.png" translatesAutoresizingMaskIntoConstraints="NO" id="14k-TT-d6B">
+                                <rect key="frame" x="143" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img13.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-qg-SlN">
+                                <rect key="frame" x="32" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FnU-04-uLW">
+                                <rect key="frame" x="32" y="359" width="316" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">台灣自早年起就受到日本飲食文化的影響，作者在十多年前，也因巧合的機緣下和日本多位廚師、餐飲學校的教授，同在一間廚房內進行廚藝的切磋與交流；從初次到多次的接觸，讓我對日本料理有更深入的瞭解與認識。
+
+　　日式料理中以懷石料理、精進料理享譽國際，其從刀工的切割、高湯的烹煮、滷煮菜的過程、燒烤的步驟、蒸的、炸的、飯、壽司……都非常講究，按部就班、絕不馬虎，這正是日本廚師們對料理認真與執著的態度，也是日本美食文化能紅遍全球的關鍵。
+
+　　日本料理中有很多菜色，不但口感極佳，也相當清爽，而這些食材都是經過非常嚴謹的調料醃製而成，且方法非常獨特，例如：以昆布上下覆蓋、烤醃黃瓜，使其入味，還有以味噌袋上下覆蓋的醃漬，其味道都非常獨特。而這些日本料理的醃汁、醃醬、煮滷汁、燒烤醬……都是事前特別烹煮準備的，心思之細膩，材料之講究，才能作出如此美味的佳餚。
+
+　　在此更要特別介紹日式料理中重要的調味料之一「味醂」。「味醂」是介於酒與醋的發酵過程中的（中段）產物，單獨品嚐它，並沒有特別的味道，淡淡的香，淡淡的酸，但是和其他調味料配在一起，就不一樣了，因為它的分子小，穿透力強，可使食材在很短的時間內就能烹煮入味，可說是廚師的一大幫手。
+
+　　在本書中，我將日式菜餚的作法略進行濃縮，成為簡單操作的素食料理，從刀工、擺飾、排法、前菜、醃汁、前菜拼盤、高湯的煮法、甜醋的調配、燒烤醬汁熬煮、壽司米飯的煮法……都做了詳細的介紹與說明，希望能藉此讓讀者對日本料理有更深一層的認識。
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img3.png" translatesAutoresizingMaskIntoConstraints="NO" id="YRA-X1-zzh">
+                                <rect key="frame" x="119" y="100" width="142" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5G4-5d-JHN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kI8-5a-P5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552.8000000000002" y="735.96059113300498"/>
+        </scene>
+        <!--Book4DetailViewConller-->
+        <scene sceneID="RT7-vU-qud">
+            <objects>
+                <viewController id="SwO-Tb-Shk" userLabel="Book4DetailViewConller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shu-xc-KRw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img18.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oq1-P5-O7M">
+                                <rect key="frame" x="259" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img17.png" translatesAutoresizingMaskIntoConstraints="NO" id="bAY-Py-EvG">
+                                <rect key="frame" x="143" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img16.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-al-RYl">
+                                <rect key="frame" x="32" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a8L-sc-jjn">
+                                <rect key="frame" x="32" y="359" width="316" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">第一次出國？沒去過東京？別擔心，本書循序漸進，從出國前的準備到當地的交通方式一一介紹，帶讀者認識交通方式，介紹熱門景點，破解旅途中的各式疑問。
+
+★東京、新宿…迷宮般的龐大車站總是讓人害怕，本書特別詳細解說東京主要大站的實用資訊，告訴你置物櫃哪裡找、月台往哪裡、周邊車站可轉乘路線，甚至連車站內部與周邊的景點都報你知，讓你玩得更省力。
+
+★機場進入市區、市區內的交通手段，JR、地下鐵、私鐵、巴士一一解說，當然也不能忘了各家交通票券，詳細介紹票券內容優缺，新手最怕的交通問題通通解決。
+
+★從登機、入境到搭電車、買車票、使用置物櫃，搞不懂的操作步驟讓人心慌，書中詳細解說以外，還搭配Step by Step圖解步驟教學，照著做就對了！
+
+★各項實用資訊以外，本書也挑選出東京的必訪景點、話題美食、流行街區，想去哪裡或想吃哪種食物，簡單一翻，就帶你吃遍逛遍最潮的東京。
+
+★初次旅行難免怕有些沒注意到的事，又怕不小心觸犯當地規矩，書中涵蓋旅行中該注意的大小事項，了解當地文化之餘，也能夠做個聰明旅人。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img4.png" translatesAutoresizingMaskIntoConstraints="NO" id="5iZ-f5-bb9">
+                                <rect key="frame" x="116" y="100" width="142" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HXf-I7-ifY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dy7-Gc-C8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552.8000000000002" y="1539.9014778325125"/>
+        </scene>
+        <!--Book5DetailViewConller-->
+        <scene sceneID="cnn-b6-iZ4">
+            <objects>
+                <viewController id="ba3-cZ-Xvn" userLabel="Book5DetailViewConller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7PD-Xa-3zQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img24.png" translatesAutoresizingMaskIntoConstraints="NO" id="6lj-eb-WQX">
+                                <rect key="frame" x="259" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img23.png" translatesAutoresizingMaskIntoConstraints="NO" id="PLF-EH-1bz">
+                                <rect key="frame" x="143" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img22.png" translatesAutoresizingMaskIntoConstraints="NO" id="Otv-mI-Ra0">
+                                <rect key="frame" x="32" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img5.png" translatesAutoresizingMaskIntoConstraints="NO" id="d1c-ja-gt6">
+                                <rect key="frame" x="119" y="100" width="142" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="onb-y3-ell">
+                                <rect key="frame" x="32" y="347" width="316" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">這是本獻給第一次前往德國自助旅行者的完全指南！
+
+第一次到德國自助旅行會覺得緊張嗎？免驚，照過來！這本就是你的德國自助入門說明書，帶著它上路，就像求到一支強運護身符！
+
+◎ 快速認識德國的好幫手
+本書的一開始，就先讓你對德國有個簡單而全面的了解，從國家基本資訊、各區域的地理氣候、代表性的大城市，到有哪些著名的宮殿城堡、博物館、和歷史名人有關的名勝等，通通都有介紹。當然，德國各地的特色啤酒地圖，是絕對少不了的！
+
+◎ 行前工作Step by Step
+沒有旅行社幫忙打點，你知道出國旅遊該做哪些功課嗎？跟著這本書的指引一步一步來，蒐集旅遊情報→準備證件→購買機票→住宿訂房→換外幣→旅遊保險→買網路→行李打包，輕輕鬆鬆，不怕忘東忘西！
+
+◎ 終於要上飛機了
+第一次自己坐飛機嗎？沒問題，這本書也會告訴你如何前往機場、辦理check-in手續、託運行李、通過海關，當然也會詳細解說入境德國的步驟，以及德國各大國際機場的平面圖。
+
+◎ 在德國做城際間的移動，比你想的還要簡單！
+包括國內線航空、德國鐵路、長途巴士、租車、市區大眾運輸等交通方式，都在本書介紹範圍內。尤其是德鐵的部分，從列車車種、火車票券種類、如何購買車票、如何搭乘火車等，都有詳盡說明。
+
+◎ 德國美食、買物大集合
+德國各地有各地的名產，每個邦有每個邦的美食，該吃什麼、該買什麼、該怎麼退稅，全部報給你知！
+
+◎ 德國三大城市旅遊指南
+柏林、慕尼黑與法蘭克福這三大城市的交通資訊、旅遊祕訣、必訪景點、行程規劃，在這本書中也都有完整而豐富的介紹。
+
+◎ 手指德文好方便！
+書中列出在德國住房、搭飛機、搭火車、點餐、買東西，以及其他日常中經常看到的單字、短句，遇到語言不通的情況也不用怕！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="UXb-WK-XaO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kod-Ou-Vhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552.8000000000002" y="2266.9950738916259"/>
+        </scene>
+        <!--Book6DetailViewConller-->
+        <scene sceneID="Bsj-Dy-onl">
+            <objects>
+                <viewController id="ASW-1D-UKV" userLabel="Book6DetailViewConller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x15-Em-h8O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img21.png" translatesAutoresizingMaskIntoConstraints="NO" id="Czd-To-B9j">
+                                <rect key="frame" x="259" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img20.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZGG-AE-htW">
+                                <rect key="frame" x="143" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img19.png" translatesAutoresizingMaskIntoConstraints="NO" id="V8p-n0-t7g">
+                                <rect key="frame" x="32" y="247" width="88" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img6.png" translatesAutoresizingMaskIntoConstraints="NO" id="SJ6-9P-Hix">
+                                <rect key="frame" x="119" y="100" width="142" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-SG-UZT">
+                                <rect key="frame" x="32" y="355" width="316" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">「國家地理終極旅遊」系列最新荒野篇
+前往你不知道的國家公園和自然保護區，尋找旅遊新體驗
+
+　　●精心推薦全球50處最值得探訪的荒野旅遊勝地，感受前所未知的自然之美
+　　●深入介紹許多鮮為人知的國家公園與自然保護區，提供荒野旅遊新選擇
+　　●收錄國家地理學會圖片庫中未曾發表的影像，揭露荒野在遊客出現以前更加純粹的原始面貌
+
+　　從巴西的熱帶溼地，到格陵蘭的巍峨峽灣，這次國家地理學會要帶你暢遊全球50個兼具荒野魅力與旅遊便利性的自然景點，包括許多鮮為人知的國家公園與自然保護區。本書揭開隱身全球各地的原始景致，讓你瞬間置身在令人震撼的野性美景之中，體驗永難忘懷的旅程。
+
+　　跟著《全球50大最美荒野》的腳步，到墨西哥嘉帕斯50層樓深的石灰岩滲穴，目睹綠鸚鵡如旋風般從洞口湧出；前往冰島蘭德曼納勞卡高地，在色調如彩虹般的山岳和火山之間健行；探索塔斯馬尼亞的火焰灣，在只有袋鼠和你作伴的原始海灘上漫步；或者造訪世界的盡頭，觀賞漂流在南極洲威德海中、奇形怪狀的高聳冰山。
+
+　　本書以啟發性的解說方式，帶你體會荒野之旅的真實感受，並收錄國家地理圖片庫中許多從未刊登過的珍貴影像，一窺這些原野景觀在過去幾乎不曾有外地人造訪時的模樣。內文更附上實用的旅遊資訊，方便你著手規畫自己的荒野之旅。
+
+　　本書致力於從一般旅遊書上看不到的旅行觀切入，讓你得到不一樣的收穫。《全球50大最美荒野》不但是一場視覺饗宴，也是對大自然的禮讚，更是想轟轟烈烈探險一番的人最佳的靈感來源。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fLA-9g-mzF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GwS-N9-vP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552.8000000000002" y="3032.5123152709361"/>
+        </scene>
+        <!--TripViewController-->
+        <scene sceneID="hRe-xc-1oH">
+            <objects>
+                <viewController id="Sfb-Y8-Q63" userLabel="TripViewController" customClass="ViewController" customModule="Homework3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DFV-v3-Zlf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rau-bp-dBQ">
+                                <rect key="frame" x="-4" y="113" width="379" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-9M-0oe">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img4.png" translatesAutoresizingMaskIntoConstraints="NO" id="hp9-uU-1Hf">
+                                                <rect key="frame" x="20" y="20" width="127" height="127"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出發！東京自助旅行─一看就懂 旅遊圖解Step by Step" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deJ-MS-S83">
+                                                <rect key="frame" x="180" y="41" width="191" height="85"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="BgK-eX-ucC" appends="YES" id="Jud-rN-BVc"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdZ-By-wrQ">
+                                <rect key="frame" x="-4" y="436" width="379" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ll0-GY-7Ch">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img6.png" translatesAutoresizingMaskIntoConstraints="NO" id="MLV-OX-fdu">
+                                                <rect key="frame" x="20" y="20" width="127" height="127"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="國家地理終極旅遊：全球50大最美荒野" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUG-NG-Bun">
+                                                <rect key="frame" x="180" y="41" width="191" height="85"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="NcH-Cb-GUp" appends="YES" id="zbB-Dd-p9C"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYi-e6-QIe">
+                                <rect key="frame" x="-4" y="274" width="379" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LN2-W4-D7S">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img5.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ia-rP-hYs">
+                                                <rect key="frame" x="20" y="20" width="127" height="127"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出發！德國自助旅行─一看就懂 旅遊圖解Step by Step 最新版" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-aO-xiw">
+                                                <rect key="frame" x="180" y="41" width="191" height="85"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="kF2-3c-0cw" appends="YES" id="5Ad-sN-TyF"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nmV-bN-G2v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="旅遊" id="MqQ-ep-TZs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rP-u5-qw5" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BgK-eX-ucC" userLabel="Book4 Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="SwO-Tb-Shk" kind="show" id="0uZ-0Z-xAp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="kF2-3c-0cw" userLabel="Book5 Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="ba3-cZ-Xvn" kind="show" id="DW0-ik-n3S"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NcH-Cb-GUp" userLabel="Book6 Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="ASW-1D-UKV" kind="show" id="Uj6-O4-rJf"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1906" y="2028"/>
+        </scene>
+        <!--MainTabBarViewController-->
+        <scene sceneID="cRh-oS-Bhq">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Drs-UM-tRm" userLabel="MainTabBarViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wiQ-qN-88Y">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CB0-dS-Eks" kind="relationship" relationship="viewControllers" id="GHd-mj-bry"/>
+                        <segue destination="KKs-x0-uO2" kind="relationship" relationship="viewControllers" id="Los-ZO-EK3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNX-Rg-rL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163.19999999999999" y="132.26600985221674"/>
+        </scene>
+        <!--RecipeNavController-->
+        <scene sceneID="4uy-1c-fTD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CB0-dS-Eks" userLabel="RecipeNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipe" image="recipe" id="jQ2-Zo-TM7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wup-65-PuZ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R5d-gm-D7i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZy-he-vhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="131.52709359605913"/>
+        </scene>
+        <!--TripNavController-->
+        <scene sceneID="QnN-fr-hXH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KKs-x0-uO2" userLabel="TripNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trip" image="trip" id="nFL-Ys-bWA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lQW-To-xaw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sfb-Y8-Q63" kind="relationship" relationship="rootViewController" id="93D-cT-X6A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zt-xz-LeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="891.87192118226608"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img1.png" width="560" height="660"/>
+        <image name="img10.png" width="474" height="662"/>
+        <image name="img11.png" width="474" height="670"/>
+        <image name="img12.png" width="484" height="682"/>
+        <image name="img13.png" width="494" height="676"/>
+        <image name="img14.png" width="532" height="692"/>
+        <image name="img15.png" width="488" height="668"/>
+        <image name="img16.png" width="696" height="490"/>
+        <image name="img17.png" width="694" height="508"/>
+        <image name="img18.png" width="690" height="504"/>
+        <image name="img19.png" width="678" height="462"/>
+        <image name="img2.png" width="612" height="678"/>
+        <image name="img20.png" width="690" height="470"/>
+        <image name="img21.png" width="692" height="476"/>
+        <image name="img22.png" width="690" height="504"/>
+        <image name="img23.png" width="688" height="510"/>
+        <image name="img24.png" width="682" height="510"/>
+        <image name="img3.png" width="574" height="674"/>
+        <image name="img4.png" width="508" height="694"/>
+        <image name="img5.png" width="502" height="682"/>
+        <image name="img6.png" width="554" height="690"/>
+        <image name="img7.png" width="692" height="484"/>
+        <image name="img8.png" width="688" height="586"/>
+        <image name="img9.png" width="698" height="490"/>
+        <image name="recipe" width="25" height="25"/>
+        <image name="trip" width="25" height="25"/>
+    </resources>
 </document>
